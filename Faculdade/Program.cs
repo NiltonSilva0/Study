@@ -1,4 +1,39 @@
-﻿//CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR"); //COMANDO usado para setar a região no código, formando a moeda e tudo mais para o lugar escolhido.
+﻿//using Faculdade.Models;
+////using Newtonsoft.Json;//PACOTE externo instalado para serializar objetos.
+
+////DESERIALIZAÇÃO lê um arquivo externo que vem em formato json e transforma em objeto.
+
+//string conteudoArquivo = File.ReadAllText("Arquivos/vendas.jason");
+
+//List<Venda> listaVenda = JsonConvert.DeserializeObject<List<Venda>>(conteudoArquivo);
+
+//foreach (Venda venda in listaVenda)
+//{
+//    Console.WriteLine(venda.Id);
+//    Console.WriteLine(venda.Produto);
+//    Console.WriteLine(venda.Preco);
+//}
+
+
+////SERIALIZAÇÃO
+//List<Venda> listaVendas = new List<Venda>();
+
+//Venda v1 = new Venda(1, "Material de escritório", 25.00M);
+//Venda v2 = new Venda(2, "Licença de Software", 110.00M);
+
+//listaVendas.Add(v1);
+//listaVendas.Add(v2);
+
+//string serializado = JsonConvert.SerializeObject(listaVendas);
+
+//File.WriteAllText("Arquivos/vendas.json", serializado);//Cria um arquivo com o conteudo da lista serializada.
+
+//Console.WriteLine(serializado);
+
+
+
+
+//CultureInfo.DefaultThreadCurrentCulture = new CultureInfo("pt-BR"); //COMANDO usado para setar a região no código, formando a moeda e tudo mais para o lugar escolhido.
 
 //Aluno aluno1 = new Aluno(nome: "Nilton Silva", sexo: "Masculino", idade: 39);
 //Aluno aluno2 = new Aluno(nome: "Karla Carvalho", sexo: "Feminino", idade: 28);
