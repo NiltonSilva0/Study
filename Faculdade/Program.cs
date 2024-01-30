@@ -1,5 +1,17 @@
 ﻿//using Faculdade.Models;
-////using Newtonsoft.Json;//PACOTE externo instalado para serializar objetos.
+//using Newtonsoft.Json;//PACOTE externo instalado para serializar objetos.
+
+//TIPOS NULOS
+//bool? desejaReceberEmail = null;
+
+//if (desejaReceberEmail.HasValue && desejaReceberEmail.Value)//SEMPRE que for verificar um valor nulo use o hasvalue para saber se tem algum valor na variavel.
+//{
+//    Console.WriteLine("O usuário deseja receber emails.");
+//}
+//else
+//{
+//    Console.WriteLine("O usuário não respondeu ou não deseja receber emails.");
+//}
 
 ////DESERIALIZAÇÃO lê um arquivo externo que vem em formato json e transforma em objeto.
 
