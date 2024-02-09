@@ -1,0 +1,76 @@
+﻿@model PROJETOMVC.Models.Contato
+
+
+@{
+    ViewData["Title"] = "Criar novo contato";
+}
+
+<h1>Criar novo contato</h1>
+
+<script>
+    function formatarTelefone(telefone) {
+        // Remove todos os caracteres não numéricos
+        telefone = telefone.replace(/\D/g, "");
+        // Aplica a máscara
+        if (telefone.length === 11) {
+            telefone = telefone.replace(/^(\d{2})(\d{5})(\d{4})$/, "($1) $2-$3");
+        } else {
+            telefone = telefone.replace(/^(\d{2})(\d{4})(\d{4})$/, "($1) $2-$3");
+        }
+        return telefone;
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+        var telefoneInput = document.getElementById("telefone");
+        telefoneInput.addEventListener("input", function () {
+            var telefone = telefoneInput.value;
+            telefoneInput.value = formatarTelefone(telefone);
+        });
+    });
+    document.addEventListener("DOMContentLoaded", function () {
+        var nomeInput = document.getElementById("nome");
+        var mensagemErro = document.getElementById("mensagemErroNome");
+
+        nomeInput.addEventListener("input", function () {
+            var nome = nomeInput.value;
+            if (/\d/.test(nome)) {
+                mensagemErro.textContent = "O campo Nome não pode conter números.";
+                nomeInput.value = nome.replace(/\d/g, ''); // Remove todos os números digitados
+            } else {
+                mensagemErro.textContent = "";
+            }
+        });
+    });
+</script>
+
+</hr>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Criar">
+            <div class="form-group">
+                <label asp-for="Nome" class="control-label"></label>
+                <input asp-for="Nome" id="nome" class="form-control" pattern="^[a-zA-ZÀ-ÿ\s]+$" title="O campo Nome deve conter apenas letras e espaços." />
+                <span id="mensagemErroNome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Telefone" class="control-label"></label>
+                <input asp-for="Telefone" id="telefone" name="telefone" class="form-control" maxlength="11" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Ativo" class="control-label"></label>
+                <input type="checkbox" asp-for="Ativo" class="form-checkbox-input" />
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="submit" value="Criar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+</hr>
+<br>
+<div>
+    <a asp-action="Index">Voltar</a>
+</div>
+
