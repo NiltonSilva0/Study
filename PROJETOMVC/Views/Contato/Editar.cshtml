@@ -2,10 +2,10 @@
 
 
 @{
-    ViewData["Title"] = "Criar novo contato";
+    ViewData["Title"] = "Editar contato";
 }
 
-<h1>Criar novo contato</h1>
+<h1>Editar contato</h1>
 
 <script>
     function formatarTelefone(telefone) {
@@ -47,7 +47,7 @@
 
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Criar">
+        <form asp-action="Editar">
             <div class="form-group">
                 <label asp-for="Nome" class="control-label"></label>
                 <input asp-for="Nome" id="nome" class="form-control" pattern="^[a-zA-ZÀ-ÿ\s]+$" title="O campo Nome deve conter apenas letras e espaços." />
@@ -63,7 +63,7 @@
             </div>
             <br>
             <div class="form-group">
-                <input type="submit" value="Criar" class="btn btn-primary" />
+                <input type="submit" value="Editar" class="btn btn-primary" />
             </div>
         </form>
     </div>

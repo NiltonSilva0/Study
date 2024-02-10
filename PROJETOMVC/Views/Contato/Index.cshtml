@@ -1,11 +1,10 @@
 ﻿@model IEnumerable<PROJETOMVC.Models.Contato>
-using PROJETOMVC.Context;
 
 @{
-    ViewData["Title"] = "Listagem de Contatos";
+    ViewData["Title"] = "Listagem de contatos";
 }
 
-<h2>Contatos</h2>
+<h1>Contatos</h1>
 
 <p>
     <a asp-action="Criar">Novo Contato</a>
@@ -13,7 +12,8 @@ using PROJETOMVC.Context;
 
 <table class="table">
     <thead>
-        <tr> @* CABEÇLHO DA LISTA DE CONTATO *@
+        <tr>
+            @* CABEÇLHO DA LISTA DE CONTATO *@
             <th>
                 @Html.DisplayNameFor(model => model.Id)
             </th>
@@ -55,4 +55,3 @@ using PROJETOMVC.Context;
     </tbody>
 </table>
 
-   
