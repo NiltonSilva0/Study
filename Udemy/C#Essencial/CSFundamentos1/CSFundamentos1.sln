@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34601.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercicio01", "Exercicio01\Exercicio01.csproj", "{242437A4-B9C8-43B2-A94C-CE02F92107FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SaidaDados", "SaidaDados\SaidaDados.csproj", "{9ADACCB5-42F6-4B2F-824D-3D46C2BF856D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{242437A4-B9C8-43B2-A94C-CE02F92107FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{242437A4-B9C8-43B2-A94C-CE02F92107FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{242437A4-B9C8-43B2-A94C-CE02F92107FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{242437A4-B9C8-43B2-A94C-CE02F92107FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ADACCB5-42F6-4B2F-824D-3D46C2BF856D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ADACCB5-42F6-4B2F-824D-3D46C2BF856D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ADACCB5-42F6-4B2F-824D-3D46C2BF856D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ADACCB5-42F6-4B2F-824D-3D46C2BF856D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C566F710-B0A4-4603-9FC7-CED05E927FC2}
+	EndGlobalSection
+EndGlobal
